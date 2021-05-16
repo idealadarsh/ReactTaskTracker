@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import swal from 'sweetalert'
 
 const AddTask = ({ onAdd }) => {
 
@@ -10,7 +11,7 @@ const AddTask = ({ onAdd }) => {
         e.preventDefault()
 
         if(!text) {
-            alert('Please add a task')
+            swal({icon: 'info', title: 'Please add a task'})
             return
         }
 

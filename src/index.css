@@ -10,6 +10,15 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+a:hover {
+  text-shadow: 1px 1px 5px gray;
+}
+
 .container {
   max-width: 500px;
   margin: 30px auto;
@@ -41,6 +50,10 @@ body {
   font-family: inherit;
 }
 
+.btn:hover {
+  box-shadow: 1px 1px 5px gray;
+}
+
 .btn:focus {
   outline: none;
 }
@@ -59,6 +72,10 @@ body {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.task:hover {
+  box-shadow: 0px 0px 10px 1px darkgray;
 }
 
 .task.reminder {
@@ -104,6 +121,10 @@ body {
 .form-control-check input {
   flex: 2;
   height: 20px;
+}
+
+.delete-icon:hover {
+  box-shadow: inset 0 0 10px gray;
 }
 
 footer {
